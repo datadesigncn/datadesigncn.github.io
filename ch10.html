@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>数据 + 设计</title>
+    <link rel="stylesheet" type="text/css" href="theme/html/html.css"/>
+<script src="js/retina.min.js" type="text/javascript"> </script>
+<script src="js/jquery.min.js" type="text/javascript"> </script>
+<script src="js/data-design.js" type="text/javascript"> </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body data-type="book">
+    <span class="btn open">Open</span>
+    <div class="navbar">
+      <div class="title">
+        <span class="btn close">Close</span>
+        <h1>Data + Design</h1>
+        <h2>A simple introduction to preparing and visualizing information</h2>
+      </div>
+      <nav data-type="toc" id="idp1870176">
+  <ol>
+    <li data-type="part">
+      <a href="titlepage01.html">简介</a>
+      <ol>
+        <li data-type="copyright-page">
+          <a href="copyright-page01.html">版权许可</a>
+        </li>
+        <li data-type="preface">
+          <a href="preface01.html">绪言</a>
+        </li>
+        <li data-type="foreword">
+          <a href="foreword01.html">序</a>
+        </li>
+        <li data-type="introduction">
+          <a href="introduction01.html">怎样使用本书</a>
+        </li>
+      </ol>
+    </li>
+
+    <li data-type="part">
+      <a href="part01.html">数据基础</a>
+      <ol>
+        <li data-type="chapter">
+          <a href="ch01.html">基本数据类型</a>
+        </li>
+        <li data-type="chapter">
+          <a href="ch02.html">关于数据聚合/统计</a>
+        </li>
+      </ol>
+    </li>
+
+    <li data-type="part">
+      <a href="part02.html">数据采集</a>
+      <ol>
+        <li data-type="chapter">
+          <a href="ch03.html">调查数据简介</a>
+        </li>
+
+        <li data-type="chapter">
+          <a href="ch04.html">调查问题类型</a>
+        </li>
+
+        <li data-type="chapter">
+          <a href="ch05.html">其他的数据采集方法</a>
+        </li>
+
+        <li data-type="chapter">
+          <a href="ch06.html">发现外部数据</a>
+        </li>
+      </ol>
+    </li>
+
+    <li data-type="part">
+      <a href="part03.html">让数据就绪</a>
+      <ol>
+        <li data-type="chapter">
+          <a href="ch07.html">数据准备</a>
+        </li>
+
+        <li data-type="chapter">
+          <a href="ch08.html">数据清理</a>
+        </li>
+
+        <li data-type="chapter">
+          <a href="ch09.html">数据校对种类</a>
+        </li>
+
+        <li data-type="chapter">
+          <a href="ch10.html">数据清理的能和不能</a>
+        </li>
+
+        <li data-type="chapter">
+          <a href="ch11.html">数据转换</a>
+        </li>
+      </ol>
+    </li>
+
+    <li data-type="part">
+      <a href="part04.html">数据可视化</a>
+      <ol>
+        <li data-type="chapter">
+          <a href="ch12.html">决定哪些以及多少数据用于呈现</a>
+        </li>
+
+        <li data-type="chapter">
+          <a href="ch13.html">Graphing the Results of Checkbox Responses</a>
+        </li>
+
+        <li data-type="chapter">
+          <a href="ch14.html">解析信息图</a>
+        </li>
+
+        <li data-type="chapter">
+          <a href="ch15.html">色彩、字体、图标的重要性</a>
+        </li>
+
+        <li data-type="chapter">
+          <a href="ch16.html">打印 Vs. 网页，静态 Vs. 交互</a>
+        </li>
+      </ol>
+    </li>
+
+    <li data-type="part">
+      <a href="part05.html">不要做什么</a>
+      <ol>
+        <li data-type="chapter">
+          <a href="ch17.html">知觉欺骗</a>
+        </li>
+
+        <li data-type="chapter"><a href="ch18.html">常见可视化错误</a>
+        </li>
+      </ol>
+    </li>
+
+    <li data-type="part">
+      <a href="#">总结</a>
+      <ol>
+        <li data-type="chapter">
+          <a href="app01.html">资源</a>
+        </li>
+        <li data-type="chapter">
+          <a href="glossary01.html">术语表</a>
+        </li>
+        <li data-type="chapter">
+          <a href="acknowledgments01.html">贡献者/致谢</a>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+
+    </div>
+    <section class="blue" data-type="chapter" data-pdf-bookmark="Chapter 28. What Data Cleaning Can and Can’t Catch" id="idp4122224">
+<header>
+  <div class="icon"><img src="images/sections/04/close-inspection.png"/></div>
+  <p>Chapter 10</p>
+  <h1>What Data Cleaning Can and Can’t Catch</h1>
+  <p data-type="author">By Dyanna Gregory</p>
+</header>
+
+<section data-type="sect1" id="idp4117648">
+<p>Now that we understand what data cleaning is for and what methods and approaches there are to shape up our dataset, there is still the question of what cleaning can and can’t catch.</p>
+
+<p>A general rule for cleaning a dataset where each column is a variable and the rows represent the records is:</p>
+
+<ul>
+	<li>if the number of incorrect or missing values in a row is greater than the number of correct values, it is recommended to exclude that row.</li>
+	<li>if the number of incorrect or missing values in a column is greater than the number of correct values in that column, it is recommended to exclude that column.</li>
+</ul>
+
+<p>It should be made clear that exclusion is not the same as deletion! If you decide that you don’t want to include a row or column in your analysis or visualization, you should set them aside in a separate dataset rather than deleting them altogether. Once data are deleted, you can’t retrieve them any longer, even if you realize later on that there was a way to fill in the missing values. Unless you are absolutely certain that you will not use a record or variable again, do not just delete it.</p>
+
+<p>In the last few chapters, we have talked about several different processes for data cleaning and have seen the types of problems they can help identify and fix. When we’re searching for errors and mistakes, we are able to detect potential problems such as:</p>
+
+<ul>
+	<li>inconsistent labels, misspellings, and errors in punctuation;</li>
+	<li>outliers, <a class="glossterm" target="_blank" href="glossary01.html#data-invalid">invalid values</a>, and extreme values;</li>
+	<li>data that aren’t internally consistent within the dataset (e.g. 200 lbs. of morphine);</li>
+	<li>lack or excess of data;</li>
+	<li>odd patterns in distributions; and</li>
+	<li>missing values.</li>
+</ul>
+
+<p>What we haven’t talked a lot about yet is what data cleaning can’t catch. There may be incorrect values that are nevertheless both within the acceptable range for the data and that make complete sense. For example, if someone enters the number 45 instead of 54 into your dataset and your valid range of numbers is 0-100, it will be unlikely that you’ll catch that error unless that field is one that you’re cross-checking with another field or you’re verifying the information with an outside source record.</p>
+
+<p>Similar to that, you may be receiving information from an online survey form and the person filling it out may have selected the button for “Strongly Agree” when they actually meant to select “Strongly Disagree.” Again, unless this answer is somehow cross-checked with another variable or source, you will have no easy way to detect this error. Sometimes this type of error is more critical than others. If a person selects “Strongly Agree” instead of “Agree” on an opinion survey, that is unlikely to have the same impact on the results as if someone accidentally marks the wrong gender on a form for a research study where you are using gender as a grouping category for treatment assignments.</p>
+
+<p>Data cleaning also can’t tell if a missing value is truly missing (i.e. the question was accidentally skipped or the data were not collected for some reason) or the question was purposely skipped (i.e. the participant declined to answer) unless “Prefer not to answer” was an answer choice. This may be relevant in some cases (particularly in demographics), though in others, you may decide to just treat both as missing data. This is why, as mentioned before, you need to include a “Prefer not to answer” choice for any question of a personal nature where you want to know if the data are truly missing, since some people may actively choose to not answer questions about race/ethnicity, income, political affiliation, sexual orientation, etc.</p>
+</section>
+</section>
+    <div class="navigation">
+      <ul>
+        <li id="next_page"><a href="ch11.html">Next</a></li>
+        <li id="previous_page"><a href="ch09.html">Previous</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
