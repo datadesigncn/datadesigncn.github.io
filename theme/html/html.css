@@ -127,7 +127,8 @@ h2 {
       position: relative; }
 
 h4 {
-  font-family: "source_sans_probold", sans-serif;
+  /*font-family: "source_sans_probold", sans-serif;*/
+  font-family: "source_sans_probold", "source_han_sans_cn_bold", sans-serif;
   margin-bottom: 1em; }
 
 table {
@@ -199,7 +200,8 @@ table.question-and-answer td {
 table.question-and-answer td:nth-child(2) p {
   color: #999999; }
 table.question-and-answer td:nth-child(2) h2 {
-  font-family: "source_sans_prosemibold", sans-serif;
+  /*font-family: "source_sans_prosemibold", sans-serif;*/
+  font-family: "source_sans_prosemibold", "source_han_sans_cn_medium", sans-serif;
   color: #41a2ba;
   font-size: 1em;
   margin: 0; }
@@ -231,7 +233,8 @@ table.yes-and-no td:nth-child(2) {
   background: #efefef; }
 
 blockquote {
-  font-family: "source_sans_proitalic", sans-serif;
+  /*font-family: "source_sans_proitalic", sans-serif;*/
+  font-family: "source_sans_proitalic", "source_han_sans_cn_regular", sans-serif;
   font-size: 1em;
   line-height: 130%;
   margin: 30px;
@@ -250,7 +253,9 @@ blockquote:before {
 
 blockquote p {
   text-indent: 0;
-  font-family: "source_sans_proitalic", sans-serif; }
+  /*font-family: "source_sans_proitalic", sans-serif;*/
+  font-family: "source_sans_proitalic", "source_han_sans_cn_regular", sans-serif;
+}
 
 blockquote p[data-type="attribution"] {
   text-align: right;
@@ -274,7 +279,8 @@ div[data-type="warning"] {
 div[data-type="note"] h1,
 div[data-type="warning"] h1 {
   color: black;
-  font-family: "source_sans_prosemibold", sans-serif;
+  /*font-family: "source_sans_proregular", sans-serif;*/
+  font-family: "source_sans_proregular", "source_han_sans_cn_regular", sans-serif;
   font-size: 1.4em;
   text-align: center;
   margin: 4px 0;
@@ -285,7 +291,8 @@ div[data-type="warning"] h3 {
 
 div[data-type="note"] p,
 div[data-type="warning"] p {
-  font-family: "source_sans_proregular", sans-serif;
+  /*font-family: "source_sans_proregular", sans-serif;*/
+  font-family: "source_sans_proregular", "source_han_sans_cn_regular", sans-serif;
   font-size: 1em;
   text-indent: 0in;
   margin-top: 0.5em;
@@ -302,7 +309,8 @@ div[data-type="example"] {
     margin: 1em 0; }
 
 div[data-type="example"] h5 {
-  font-family: "source_sans_proregular", sans-serif;
+  /*font-family: "source_sans_proregular", sans-serif;*/
+  font-family: "source_sans_proregular", "source_han_sans_cn_regular", sans-serif;
   font-size: 0.8em;
   line-height: 120%;
   border-bottom: 1px solid #d8d8d8;
@@ -316,7 +324,8 @@ aside {
   margin: 30px 0; }
 
 aside h5 {
-  font-family: "source_sans_proregular", sans-serif;
+  /*font-family: "source_sans_proregular", sans-serif;*/
+  font-family: "source_sans_proregular", "source_han_sans_cn_regular", sans-serif;
   font-size: 1em;
   line-height: 120%;
   text-align: center;
@@ -324,20 +333,23 @@ aside h5 {
   padding: 0; }
 
 aside h6 {
-  font-family: "source_sans_proregular", sans-serif;
+  /*font-family: "source_sans_proregular", sans-serif;*/
+  font-family: "source_sans_proregular", "source_han_sans_cn_regular", sans-serif;
   font-weight: bold;
   font-size: 0.9em;
   line-height: 120%; }
 
 aside p {
-  font-family: "source_sans_proregular", sans-serif;
+  /*font-family: "source_sans_proregular", sans-serif;*/
+  font-family: "source_sans_proregular", "source_han_sans_cn_regular", sans-serif;
   font-size: 1em;
   line-height: 130%;
   text-indent: 0;
   margin-top: 6px; }
 
 figcaption {
-  font-family: "source_sans_proregular", sans-serif;
+  /*font-family: "source_sans_proregular", sans-serif;*/
+  font-family: "source_sans_proregular", "source_han_sans_cn_regular", sans-serif;
   font-size: 0.9em;
   font-style: italic;
   line-height: 120%;
@@ -354,7 +366,8 @@ figcaption {
 
 body {
   max-width: 100%;
-  font-family: "source_sans_proregular", sans-serif;
+  /*font-family: "source_sans_proregular", sans-serif;*/
+  font-family: "source_sans_proregular", "source_han_sans_cn_regular", sans-serif;
   font-size: 18px;
   margin: 0 0 3em;
   padding-top: 0; }
@@ -393,8 +406,51 @@ html {
   src: url("../fonts/sourcesanspro-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sourcesanspro-italic-webfont.woff") format("woff"), url("../fonts/sourcesanspro-italic-webfont.ttf") format("truetype"), url("../fonts/sourcesanspro-italic-webfont.svg#source_sans_proitalic") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: "source_han_sans_cn_bold";
+  src: url("../shared/fonts/SourceHanSansCN-Bold.otf");
+  src: url("../shared/fonts/SourceHanSansCN-Bold.otf?#iefix") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "source_han_sans_cn_extralight";
+  src: url("../shared/fonts/SourceHanSansCN-ExtraLight.otf");
+  src: url("../shared/fonts/SourceHanSansCN-ExtraLight.otf?#iefix") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "source_han_sans_cn_heavy";
+  src: url("../shared/fonts/SourceHanSansCN-Heavy.otf");
+  src: url("../shared/fonts/SourceHanSansCN-Heavy.otf?#iefix") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "source_han_sans_cn_light";
+  src: url("../shared/fonts/SourceHanSansCN-Light.otf");
+  src: url("../shared/fonts/SourceHanSansCN-Light.otf?#iefix") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "source_han_sans_cn_medium";
+  src: url("../shared/fonts/SourceHanSansCN-Medium.otf");
+  src: url("../shared/fonts/SourceHanSansCN-Medium.otf?#iefix") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "source_han_sans_cn_normal";
+  src: url("../shared/fonts/SourceHanSansCN-Normal.otf");
+  src: url("../shared/fonts/SourceHanSansCN-Normal.otf?#iefix") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "source_han_sans_cn_regular";
+  src: url("../shared/fonts/SourceHanSansCN-Regular.otf");
+  src: url("../shared/fonts/SourceHanSansCN-Regular.otf?#iefix") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
 p, dd {
-  font-family: "source_sans_proregular", sans-serif;
+  /*font-family: "source_sans_proregular", sans-serif;*/
+  font-family: "source_sans_proregular", "source_han_sans_cn_regular", sans-serif;
   font-size: 1em;
   line-height: 150%;
   text-indent: 0;
@@ -416,11 +472,16 @@ p a {
     color: #3a92a7; }
 
 em {
-  font-family: "source_sans_proitalic", sans-serif;
-  font-style: normal; }
+  /*font-family: "source_sans_proitalic", sans-serif;*/
+  font-family: "source_sans_proitalic", "source_han_sans_cn_regular", sans-serif;
+  font-style: normal; 
+}
 
 strong {
-  font-family: "source_sans_probold", sans-serif; }
+  /*font-family: "source_sans_probold", sans-serif;*/
+  font-family: "source_sans_probold", "source_han_sans_cn_bold", sans-serif; 
+}
+
 
 hr {
   height: 20px;
@@ -431,7 +492,8 @@ section {
   margin: 0 auto 8em; }
 
 h3 {
-  font-family: "source_sans_probold", sans-serif;
+  /*font-family: "source_sans_probold", sans-serif;*/
+  font-family: "source_sans_probold", "source_han_sans_cn_bold", sans-serif; 
   color: #aaaaaa;
   text-transform: uppercase;
   margin-top: 2em;
@@ -441,7 +503,8 @@ h3 + p {
   margin-top: 0.5em; }
 
 section[data-type="titlepage"] h1 {
-  font-family: "source_sans_prosemibold", sans-serif;
+  /*font-family: "source_sans_prosemibold", sans-serif;*/
+  font-family: "source_sans_prosemibold", "source_han_sans_cn_medium", sans-serif; 
   line-height: 120%;
   padding-top: 1.5em;
   font-size: 5em;
@@ -478,7 +541,8 @@ nav[data-type="toc"] {
     padding-left: 30px; }
   nav[data-type="toc"] li {
     list-style-type: none;
-    font-family: "source_sans_proregular", sans-serif;
+    /*font-family: "source_sans_proregular", sans-serif;*/
+    font-family: "source_sans_proregular", "source_han_sans_cn_regular", sans-serif; 
     margin-top: 0;
     padding: 20px 0 0px;
     border-bottom: 1px solid #cccccc;
@@ -559,7 +623,8 @@ nav[data-type="toc"] {
           background: #41a2ba; }
         nav[data-type="toc"] li[data-type="part"] ol li ol {
           display: none;
-          font-family: "source_sans_proregular", sans-serif;
+          /*font-family: "source_sans_proregular", sans-serif;*/
+          font-family: "source_sans_proregular", "source_han_sans_cn_regular", sans-serif; 
           font-size: 1em;
           line-height: 120%;
           margin-left: 0px;
@@ -609,7 +674,8 @@ section[data-type="chapter"] header {
   border-bottom: 18px solid #eeeeee;
   margin-bottom: 4em; }
   section[data-type="chapter"] header h1 {
-    font-family: "source_sans_probold", sans-serif;
+    /*font-family: "source_sans_probold", sans-serif;*/
+    font-family: "source_sans_probold", "source_han_sans_cn_bold", sans-serif; 
     font-size: 2.4em;
     margin-top: 0;
     margin-bottom: 0;
@@ -618,7 +684,8 @@ section[data-type="chapter"] header {
     color: #444444;
     -webkit-font-smoothing: antialiased; }
   section[data-type="chapter"] header p {
-    font-family: "source_sans_prolight", sans-serif;
+    /*font-family: "source_sans_prolight", sans-serif;*/
+    font-family: "source_sans_prolight", "source_han_sans_cn_light", sans-serif; 
     text-align: center;
     text-transform: uppercase;
     margin: 0 0.5em;
@@ -752,7 +819,8 @@ ul, ol {
 
 ul li, ol li,
 ul li p, ol li p {
-  font-family: "source_sans_proregular", sans-serif;
+  /*font-family: "source_sans_proregular", sans-serif;*/
+  font-family: "source_sans_proregular", "source_han_sans_cn_regular", sans-serif; 
   font-size: 1em;
   line-height: 150%;
   margin-top: 0.5em;
@@ -762,7 +830,8 @@ dl {
   margin-bottom: 15px; }
 
 dt {
-  font-family: "source_sans_proregular", sans-serif;
+  /*font-family: "source_sans_proregular", sans-serif;*/
+  font-family: "source_sans_proregular", "source_han_sans_cn_regular", sans-serif; 
   font-size: 0.9em;
   line-height: 120%;
   margin-top: 15px;
@@ -789,7 +858,8 @@ table {
     background: white; }
 
 table caption {
-  font-family: "source_sans_proregular", sans-serif;
+  /*font-family: "source_sans_proregular", sans-serif;*/
+  font-family: "source_sans_proregular", "source_han_sans_cn_regular", sans-serif; 
   line-height: 120%;
   text-align: left;
   margin: 0 0 20px 0;
@@ -801,7 +871,8 @@ tr {
     border-top: 1px solid #d1d2d4; }
 
 th {
-  font-family: "source_sans_proregular", sans-serif;
+  /*font-family: "source_sans_proregular", sans-serif;*/
+  font-family: "source_sans_proregular", "source_han_sans_cn_regular", sans-serif; 
   line-height: 120%;
   text-align: left;
   margin-top: 0;
@@ -824,7 +895,8 @@ td {
   font-size: 1em; }
 
 td, table p {
-  font-family: "source_sans_proregular", sans-serif;
+  /*font-family: "source_sans_proregular", sans-serif;*/
+  font-family: "source_sans_proregular", "source_han_sans_cn_regular", sans-serif; 
   line-height: 120%; }
 
 table p {
@@ -887,11 +959,13 @@ p[data-type="author"] {
   margin-bottom: 3em;
   text-transform: uppercase; }
   p[data-type="author"] em {
-    font-family: "source_sans_prolight", sans-serif;
+    /*font-family: "source_sans_prolight", sans-serif;*/
+    font-family: "source_sans_prolight", "source_han_sans_cn_light", sans-serif; 
     color: #bbbbbb; }
 
 div.navbar {
-  font-family: "source_sans_proregular", sans-serif;
+  /*font-family: "source_sans_proregular", sans-serif;*/
+  font-family: "source_sans_proregular", "source_han_sans_cn_regular", sans-serif; 
   background-color: #dfdfdf;
   position: fixed;
   top: 0;
@@ -909,7 +983,8 @@ div.navbar {
     width: 320px;
     z-index: 12; }
   div.navbar h1 {
-    font-family: "source_sans_probold";
+    /*font-family: "source_sans_probold";*/
+    font-family: "source_sans_probold", "source_han_sans_cn_bold", sans-serif; 
     text-transform: uppercase;
     font-size: 1.7em;
     float: left;
@@ -963,7 +1038,9 @@ div.navbar p {
   font-weight: normal;
   padding: 0;
   margin: 0;
-  font-family: "source_sans_proregular", sans-serif; }
+  /*font-family: "source_sans_proregular", sans-serif;*/
+  font-family: "source_sans_proregular", "source_han_sans_cn_regular", sans-serif;  
+}
 
 div.navbar p a {
   text-decoration: none;
@@ -1180,8 +1257,10 @@ section[data-type="acknowledgments"] .header {
     padding-top: 0.6em;
     padding-bottom: 0.3em;
     font-size: 1em;
-    font-family: "source_sans_prosemibold", sans-serif; }
-    section[data-type="acknowledgments"] .header h3 a {
+    /*font-family: "source_sans_prosemibold", sans-serif; */
+    font-family: "source_sans_prosemibold", "source_han_sans_cn_medium", sans-serif; 
+  }
+  section[data-type="acknowledgments"] .header h3 a {
       color: #aaaaaa;
       -webkit-transition: color, 0.2s, ease-in-out;
       -moz-transition: color, 0.2s, ease-in-out;
