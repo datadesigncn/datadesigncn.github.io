@@ -10,14 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body data-type="book">
-    <span class="btn open">Open</span>
+    <span class="btn open">打开</span>
     <div class="navbar">
       <div class="title">
-        <span class="btn close">Close</span>
-        <h1>Data + Design</h1>
-        <h2>A simple introduction to preparing and visualizing information</h2>
+        <span class="btn close">关闭</span>
+        <h1>数据 + 设计</h1>
+        <h2>对信息准备与可视化的简要介绍</h2>
       </div>
-      <nav data-type="toc" id="idp9811040">
+      <nav data-type="toc" id="idp116240">
   <ol>
     <li data-type="part">
       <a href="titlepage01.html">简介</a>
@@ -150,7 +150,7 @@
 </nav>
 
     </div>
-    <section class="violet" data-type="chapter" data-pdf-bookmark="Chapter 20. About Data Aggregation" id="idp3980400">
+    <section class="violet" data-type="chapter" data-pdf-bookmark="Chapter 20. About Data Aggregation" id="idp4274336">
 <header>
   <div class="icon"><img src="images/sections/02/coffee.png"/></div>
   <p>Chapter 2</p>
@@ -161,7 +161,7 @@
   <p data-type="author">著：ALISTAIR CROLL，译：紫瑰</p>
 </header>
 
-<section class="id" data-type="sect1" id="idp3981568">
+<section class="id" data-type="sect1" id="idp4285024">
 <p>When trying to turn data into information, the data you start with matter a lot. Data can be simple factoids—of which someone else has done all of the analysis—or raw transactions, where the exploration is left entirely to the user.</p>
 <p>当尝试着把数据转化为信息，你着手的数据非常重要。数据可能是其他人已完成了所有分析后得出的简单的信息，或者是用户可以在此之上做全面的数据探索的原始交易数据。</p>
 
@@ -252,7 +252,7 @@
 <p>Let’s look at these types of aggregation one by one, using the example of coffee consumption. Let’s assume a café tracks each cup of coffee sold and records two pieces of information about the sale: the gender of the buyer and the kind of coffee (regular, decaf, or mocha).</p>
 <p>让我们用咖啡销售的例子，来一个一个地讨论一下这些数据聚合类型。假设咖啡馆跟踪每一杯咖啡的销售情况，并记录对应的两种信息：消费者的性别和咖啡种类（常规咖啡、无咖啡因咖啡、或摩卡）</p>
 
-<p>The basic table of these data, by year, looks like this<a xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="noteref" id="idp4025600-marker" href="ch02.html#idp4025600"><sup>1</sup></a>:</p>
+<p>The basic table of these data, by year, looks like this<a xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="noteref" id="idp4323792-marker" href="ch02.html#idp4323792"><sup>1</sup></a>:</p>
 <p>基于年份的数据基本表如下图：(顺便提一下，这些完全都是编造的数据)</p>
 
 <table class="custom">
@@ -424,7 +424,7 @@
 <p>In this example, the total sales of coffee <em>depends</em> on the year. That is, the year is independent (“pick a year, any year”) and the sales is dependent (“based on that year, the consumption is 23,005 cups”).</p>
 <p>在此例中，咖啡的总销售量是基于年份的。也就是说，年份是自变量（“挑选一年，任何一年”），销售量是因变量（“那一年，咖啡的销售量是23005杯”）。</p>
 
-<p>A series can also be some other set of continuous data, such as temperature. Consider this table that shows how long it takes for an adult to sustain a first-degree burn from hot water. Here, water temperature is the independent variable<a xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="noteref" id="idp4104240-marker" href="ch02.html#idp4104240"><sup>2</sup></a>:</p>
+<p>A series can also be some other set of continuous data, such as temperature. Consider this table that shows how long it takes for an adult to sustain a first-degree burn from hot water. Here, water temperature is the independent variable<a xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="noteref" id="idp4402432-marker" href="ch02.html#idp4402432"><sup>2</sup></a>:</p>
 <p>单序列数据也可以是一些其他独立变量的连续数据集，例如温度。下表显示了一个成年人在不同温度的热水中忍受一级烧伤的时间。在此，温度是自变量。（美国政府报告，消费品安全委员会，彼得.L.阿姆斯壮，1978年9月15日）。</p>
 
 <table>
@@ -460,8 +460,8 @@
 	</tbody>
 </table>
 
-<p>And it can be a <a class="glossterm " target="_blank" href="glossary01.html#series">series</a> of non-contiguous, but related, information in a category, such as major car brands, types of dog, vegetables, or the mass of planets in the solar system<a xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="noteref" id="idp4120080-marker" href="ch02.html#idp4120080"><sup>3</sup></a>:</p>
-<p>同时，它可以是同属一类的不连续但相关的单序列数据，例如：主要的汽车品牌，狗的种类，蔬菜，太阳系中行星的质量。<a xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="noteref" id="idp4123200-marker" href="ch02.html#idp4123200"><sup>4</sup></a>:</p>
+<p>And it can be a <a class="glossterm " target="_blank" href="glossary01.html#series">series</a> of non-contiguous, but related, information in a category, such as major car brands, types of dog, vegetables, or the mass of planets in the solar system<a xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="noteref" id="idp4418272-marker" href="ch02.html#idp4418272"><sup>3</sup></a>:</p>
+<p>同时，它可以是同属一类的不连续但相关的单序列数据，例如：主要的汽车品牌，狗的种类，蔬菜，太阳系中行星的质量。<a xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="noteref" id="idp4421392-marker" href="ch02.html#idp4421392"><sup>4</sup></a>:</p>
 
 <table>
 	<tbody>
@@ -555,8 +555,8 @@
 <h2>Multiseries</h2>
 <h2>多系列数据</h2>
 
-<p>A <a class="glossterm " target="_blank" href="glossary01.html#series-multiseries">multiseries</a> dataset has several pieces of dependent information and one piece of independent information. Here are the data about exposure to hot water from before, with additional data<a xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="noteref" id="idp4165632-marker" href="ch02.html#idp4165632"><sup>5</sup></a>:</p>
-<p>一个<a class="glossterm " target="_blank" href="glossary01.html#series-multiseries">多系列</a>数据集有若干因变量信息和一个独立变量信息。上例中显示了一个成年人把手放置于不同温度热水中忍受一级烧伤所用时间，下表中又添加了忍受二级烧伤/三级烧伤所用的时间。<a xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="noteref" id="idp4168464-marker" href="ch02.html#idp4168464"><sup>6</sup></a>:</p>
+<p>A <a class="glossterm " target="_blank" href="glossary01.html#series-multiseries">multiseries</a> dataset has several pieces of dependent information and one piece of independent information. Here are the data about exposure to hot water from before, with additional data<a xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="noteref" id="idp4463824-marker" href="ch02.html#idp4463824"><sup>5</sup></a>:</p>
+<p>一个<a class="glossterm " target="_blank" href="glossary01.html#series-multiseries">多系列</a>数据集有若干因变量信息和一个独立变量信息。上例中显示了一个成年人把手放置于不同温度热水中忍受一级烧伤所用时间，下表中又添加了忍受二级烧伤/三级烧伤所用的时间。<a xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="noteref" id="idp4466656-marker" href="ch02.html#idp4466656"><sup>6</sup></a>:</p>
 
 <table>
 	<tbody>
@@ -928,7 +928,7 @@
 	</tbody>
 </table>
 
-<p>Looking at this table, we can see a pretty clear trend: Women like regular; men seem evenly split across all three types of coffee<a xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="noteref" id="idp4316336-marker" href="ch02.html#idp4316336"><sup>7</sup></a>.</p>
+<p>Looking at this table, we can see a pretty clear trend: Women like regular; men seem evenly split across all three types of coffee<a xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="noteref" id="idp4614528-marker" href="ch02.html#idp4614528"><sup>7</sup></a>.</p>
 <p>请看此表，我们可以看到一个相当清晰的趋势：女士喜欢常规咖啡，而男士对三种咖啡的消费量相差不大。没有足够的数据来做出像这样统计上的可靠陈述。但是不管怎样，这些都是编造的数据，所以，请停止对咖啡消费量更深层的思考吧。</p>
 
 <p>The thing about these data, however, is they have still been <a class="glossterm" target="_blank" href="glossary01.html#aggregation">aggregated</a> somehow. We summarized the data along several dimensions—gender and coffee type—by aggregating them by the name of the patron. While this isn’t the <a class="glossterm" target="_blank" href="glossary01.html#data-raw">raw data</a>, it’s close.</p>
@@ -1221,12 +1221,22 @@
 <p>大数据将要解决这其中的一些问题。曾经，因计算量太大而不能存储所有的原始交易。我们在采集数据的时候便要决定怎样聚合，然后丢掉原始信息。但是存储效率、并行计算和云计算技术的进步，使得大规模数据集的即时聚合成为现实，这应该克服了一定的<a class="glossterm" target="_blank" href="glossary01.html#bias-aggregation">聚合偏差</a>。</p>
 </div>
 </section>
-<aside data-type="footnotes"><p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="footnote" id="idp4025600"><a href="ch02.html#idp4025600-marker"><sup>1</sup></a> These are completely made up coffee data, BTW.</p><p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="footnote" id="idp4104240"><a href="ch02.html#idp4104240-marker"><sup>2</sup></a> US Government Memorandum, Consumer Product Safety Commission, Peter L. Armstrong, Sept. 15, 1978.</p><p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="footnote" id="idp4120080"><a href="ch02.html#idp4120080-marker"><sup>3</sup></a> National Space Science Data Center, NASA: http://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_ratio.html</p><p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="footnote" id="idp4123200"><a href="ch02.html#idp4123200-marker"><sup>4</sup></a> 国家空间科学数据中心，美国国家航空航天局：http://nssdc.gsfc.nasa.gov/planetary/factsheet/plan- et_table_ratio.html</p><p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="footnote" id="idp4165632"><a href="ch02.html#idp4165632-marker"><sup>5</sup></a> US Government Memorandum, Consumer Product Safety Commission, Peter L. Armstrong, Sept. 15, 1978.</p><p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="footnote" id="idp4168464"><a href="ch02.html#idp4168464-marker"><sup>6</sup></a> 美国政府报告，消费品安全委员会，彼得.L.阿姆斯壮，1978年9月15日。</p><p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="footnote" id="idp4316336"><a href="ch02.html#idp4316336-marker"><sup>7</sup></a> There aren’t enough data to make a statistically reliable statement like this. But this is all made-up data anyway, so stop thinking so much about coffee consumption.</p></aside></section>
+<aside data-type="footnotes"><p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="footnote" id="idp4323792"><a href="ch02.html#idp4323792-marker"><sup>1</sup></a> These are completely made up coffee data, BTW.</p><p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="footnote" id="idp4402432"><a href="ch02.html#idp4402432-marker"><sup>2</sup></a> US Government Memorandum, Consumer Product Safety Commission, Peter L. Armstrong, Sept. 15, 1978.</p><p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="footnote" id="idp4418272"><a href="ch02.html#idp4418272-marker"><sup>3</sup></a> National Space Science Data Center, NASA: http://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_ratio.html</p><p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="footnote" id="idp4421392"><a href="ch02.html#idp4421392-marker"><sup>4</sup></a> 国家空间科学数据中心，美国国家航空航天局：http://nssdc.gsfc.nasa.gov/planetary/factsheet/plan- et_table_ratio.html</p><p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="footnote" id="idp4463824"><a href="ch02.html#idp4463824-marker"><sup>5</sup></a> US Government Memorandum, Consumer Product Safety Commission, Peter L. Armstrong, Sept. 15, 1978.</p><p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="footnote" id="idp4466656"><a href="ch02.html#idp4466656-marker"><sup>6</sup></a> 美国政府报告，消费品安全委员会，彼得.L.阿姆斯壮，1978年9月15日。</p><p xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" data-type="footnote" id="idp4614528"><a href="ch02.html#idp4614528-marker"><sup>7</sup></a> There aren’t enough data to make a statistically reliable statement like this. But this is all made-up data anyway, so stop thinking so much about coffee consumption.</p></aside></section>
     <div class="navigation">
       <ul>
         <li id="next_page"><a href="part02.html">Next</a></li>
         <li id="previous_page"><a href="ch01.html">Previous</a></li>
       </ul>
     </div>
+
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?27111432badf47d1f6260dcd3c815289";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
   </body>
 </html>
